@@ -50,12 +50,19 @@ TODO:
 ------------
 
 *simplecov (generate html reports on testing coverage)
+
 *pg_search (handyist thing I've found so far for searching through active record/pg)
+
 *Brakeman scanner (used by twitter and github, an amazing tool to catch security errors)
+
 *Factorygirl setup (via viking curric)
+
 *Example model test layout, users (using my conventions etc)
+
 *Font-awesome (worth having even if just for EASY access to that beautiful glyphicon base)
+
 *pronto (comes with a bunch of runners. allows you to combine a lot of useful gems to inspect the quality of your rails code at once and outputs to a file or command line)
+
 *muthafuckin stripe. shell *must* need out of the box payment config.
 
 
