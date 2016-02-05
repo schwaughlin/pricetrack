@@ -27,11 +27,18 @@ Tool | Type | Info(opt)
 [Pundit](https://github.com/elabs/pundit) | Role/policy setting for users and access | Main competitor to this is cancan
 [Unicorn](https://github.com/samuelkadolph/unicorn-rails) | Webserver Dev & Prod | We used this last project, let's keep it
 [Postgres](http://www.postgresql.org/) | Database test/dev/prod | -
-RSpec | Testing Framework | Sorry DHH, better than Unit::Test
+[RSpec](https://github.com/rspec/rspec-rails) | Testing Framework | Sorry DHH, better than Unit::Test
 [FactoryGirl](https://github.com/thoughtbot/factory_girl) | Supplement for testing framework | -
 [Capybara](https://github.com/jnicklas/capybara) | Support for feature testing | -
 [Heroku](http://www.heroku.com) | Deployment | -
 [Segment.io](http://segment.io) | Application analytics | Build new project and get new API key before integration.
+[Figaro](https://github.com/laserlemon/figaro) | Management of environment variables | Life saver when you need dem slugs yo. Main business file is `application.yml`
+[Simple_form](https://github.com/plataformatec/simple_form) | form building | Some extra tools to simplify form building
+[Better Errors](https://github.com/charliesome/better_errors) | Dynamic error page | Don't leave home without it
+[Rubocop](https://github.com/bbatsov/rubocop) | Code improvement | Run a simple command and catch your coding smell errors.
+[Mechanize](https://github.com/sparklemotion/mechanize) | Scraping support | -
+[HTTParty](https://github.com/jnunemaker/httparty) | Scraping support | -
+[RSpect-Retry](https://github.com/NoRedInk/rspec-retry) | Allows failing tests a quick retry | Helpful with phantom errors and large testing suites
 
 Misc
 --------------
@@ -39,20 +46,16 @@ Misc
 
 *Turbolinks disabled
 
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
+TODO:
 ------------
 
-Credits
--------
+-simplecov (generate html reports on testing coverage)
+-pg_search (handyist thing I've found so far for searching through active record/pg)
+-Brakeman scanner (used by twitter and github, an amazing tool to catch security errors)
+-Factorygirl setup (via viking curric)
+-Example model test layout, users (using my conventions etc)
+-Font-awesome (worth having even if just for EASY access to that beautiful glyphicon base)
+-pronto (comes with a bunch of runners. allows you to combine a lot of useful gems to inspect the quality of your rails code at once and outputs to a file or command line)
 
-License
--------
+
+

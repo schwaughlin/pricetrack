@@ -19,6 +19,8 @@ gem 'sendgrid'
 gem 'simple_form'
 gem 'unicorn'
 gem 'unicorn-rails'
+gem 'mechanize'
+gem 'httparty'
 
 group :development, :test do
   gem 'byebug'
@@ -54,4 +56,5 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
+  gem 'rspec-retry'
 end
