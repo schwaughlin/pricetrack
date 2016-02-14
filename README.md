@@ -41,6 +41,10 @@ Tool | Type | Info(opt)
 [RSpect-Retry](https://github.com/NoRedInk/rspec-retry) | Allows failing tests a quick retry | Helpful with phantom errors and large testing suites
 [Simplecov](https://github.com/colszowka/simplecov) | Generate html reports on testing coverage | Super helpful to make sure you're not crazy when you think you've written all the tests!
 [Pg_search](https://github.com/Casecommons/pg_search) | Powerful, dynamic searching in active record | the best tool I've found for this so far, trigrams are welcome!
+[Brakeman Scanner](https://github.com/presidentbeef/brakeman) | Security checks for rails | used by twitter and github, an amazing tool to catch security errors
+[Font-awesome](https://github.com/bokmann/font-awesome-rails) | CSS stylesheet UI magic | worth having even if just for EASY access to that beautiful glyphicon base
+[Pronto](https://github.com/mmozuras/pronto) | comes with a bunch of runners. allows you to combine a lot of useful gems to inspect the quality of your rails code at once and outputs to a file or command line | NOTE: Currently running with an error.
+[Stripe](https://stripe.com/docs/checkout/guides/rails) | Payment acceptance | that's how we get dat sweet cashola for a valuable product.
 
 Misc
 --------------
@@ -48,24 +52,19 @@ Misc
 
 *Turbolinks disabled
 
+Needs new keys on boot
+---------------
+* Stripe
+
+* Segment.io
+
 TODO:
 ------------
 
-*Brakeman scanner (used by twitter and github, an amazing tool to catch security errors)
-
 *Factorygirl setup (via viking curric)
-
-*Example model test layout, users (using my conventions etc)
-
-*Font-awesome (worth having even if just for EASY access to that beautiful glyphicon base)
-
-*pronto (comes with a bunch of runners. allows you to combine a lot of useful gems to inspect the quality of your rails code at once and outputs to a file or command line)
-
-*muthafuckin stripe. shell *must* need out of the box payment config.
 
 *continuous integration, github https://github.com/integrations/feature/code
 
-*microservice architecture capabilities?
 
 * [Travis CI](https://github.com/integrations/travis-ci) for continuous integration (interfaces slick w/ github/heroku/slack)
 

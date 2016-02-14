@@ -91,3 +91,17 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+
+
+Started GET "/charges/new" for ::1 at 2016-02-13 22:19:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChargesController#new as HTML
+  Rendered charges/new.html.erb within layouts/charges (21.2ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/charges" for ::1 at 2016-02-13 22:20:00 -0700
+Processing by ChargesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t5lI2SR2XirjGZaJ7jfS2QKxYUUVIBRD+Ho3bInEhw9uUYM0cA94ZUAR+6XeXxCKv2GHRozXyhNXQCEi3eho/Q==", "stripeToken"=>"tok_17eIIa2eZvKYlo2CmOSTjrE0", "stripeTokenType"=>"card", "stripeEmail"=>"adsf@dfajskl.com"}
+  Rendered charges/create.html.erb within layouts/charges (0.4ms)
+Completed 200 OK in 1296ms (Views: 5.6ms | ActiveRecord: 0.0ms)

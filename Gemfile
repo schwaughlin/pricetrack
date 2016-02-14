@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 
 gem 'administrate'
+gem "font-awesome-rails"
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'figaro'
@@ -22,6 +23,7 @@ gem 'unicorn-rails'
 gem 'mechanize'
 gem 'httparty'
 gem 'pg_search'
+gem 'stripe'
 
 group :development, :test do
   gem 'byebug'
@@ -31,6 +33,13 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'rspec-rails'
   gem 'rubocop'
+  gem 'brakeman', :require => false
+  gem 'pronto' # License: MIT
+  gem 'pronto-rubocop', require: false # License: MIT
+  gem 'pronto-flay', require: false # License: MIT
+  gem 'pronto-brakeman', require: false # License: MIT
+  gem 'pronto-haml', require: false # License: MIT
+  gem 'fasterer' # License: MIT
 end
 
 group :development do
