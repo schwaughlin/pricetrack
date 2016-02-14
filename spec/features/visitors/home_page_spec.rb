@@ -1,3 +1,5 @@
+require 'spec_helper'
+require 'rails_helper'
 # Feature: Home page
 #   As a visitor
 #   I want to visit a home page

@@ -1,3 +1,5 @@
+require 'spec_helper'
+require 'rails_helper'
 include Warden::Test::Helpers
 Warden.test_mode!
 
