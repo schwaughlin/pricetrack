@@ -39,6 +39,8 @@ Tool | Type | Info(opt)
 [Mechanize](https://github.com/sparklemotion/mechanize) | Scraping support | -
 [HTTParty](https://github.com/jnunemaker/httparty) | Scraping support | -
 [RSpect-Retry](https://github.com/NoRedInk/rspec-retry) | Allows failing tests a quick retry | Helpful with phantom errors and large testing suites
+[Simplecov](https://github.com/colszowka/simplecov) | Generate html reports on testing coverage | Super helpful to make sure you're not crazy when you think you've written all the tests!
+[Pg_search](https://github.com/Casecommons/pg_search) | Powerful, dynamic searching in active record | the best tool I've found for this so far, trigrams are welcome!
 
 Misc
 --------------
@@ -48,10 +50,6 @@ Misc
 
 TODO:
 ------------
-
-*simplecov (generate html reports on testing coverage)
-
-*pg_search (handyist thing I've found so far for searching through active record/pg)
 
 *Brakeman scanner (used by twitter and github, an amazing tool to catch security errors)
 

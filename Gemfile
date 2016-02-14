@@ -21,6 +21,7 @@ gem 'unicorn'
 gem 'unicorn-rails'
 gem 'mechanize'
 gem 'httparty'
+gem 'pg_search'
 
 group :development, :test do
   gem 'byebug'
