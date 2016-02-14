@@ -65,5 +65,12 @@ TODO:
 
 *muthafuckin stripe. shell *must* need out of the box payment config.
 
+*continuous integration, github https://github.com/integrations/feature/code
+
+*microservice architecture capabilities?
+
+* [Travis CI](https://github.com/integrations/travis-ci) for continuous integration (interfaces slick w/ github/heroku/slack)
+
+
 
 
