@@ -16,7 +16,7 @@ gem 'figaro'
 gem 'high_voltage'
 gem 'pg'
 gem 'pundit'
-gem 'sendgrid'
+gem 'sendgrid' #transactional
 gem 'simple_form'
 gem 'unicorn'
 gem 'unicorn-rails'
@@ -24,6 +24,7 @@ gem 'mechanize'
 gem 'httparty'
 gem 'pg_search'
 gem 'stripe'
+gem 'mailchimp-api', require: 'mailchimp' #campaign
 
 group :development, :test do
   gem 'byebug'

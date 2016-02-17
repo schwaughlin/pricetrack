@@ -1,7 +1,7 @@
 PRICETRACKER
 ================
 
-
+[This runs on pivotal tracker](https://www.pivotaltracker.com/n/projects/1538035)
 
 This is an application built off of the Schwaughlin Company Shell framework.
 
@@ -14,14 +14,31 @@ PROTOTYPE
 
 *Hook up to Scott's competitor coin site for him to check out.
 
+*Base around basic plan view
+
+*Use current vanilla stripe
+
+*Find some other fancy out of the box theme for a landing page too
+
 
 MVP
 ===================
 *Render different layouts based on user's plan.
 
-* DEMO is live (our work built on top of an amazon integration, they can or can't add products?)
+* DEMO is live (our work built on top of an amazon integration, they can or can't add products?)(maybe starter product group and can add?)
 
-* BASIC is live. (0-1000 products, 1-3 sources).
+* BASIC is live. (0-1000 products, 1-3 sources). $99/mo
+
+*[Consider payola integration](https://www.masteringmodernpayments.com/)
+
+1.0
+=====================
+
+* PRO is live (< 10,000 products, 4-10 sources) $249/mo
+
+* ENTERPRISE is live ( < 100,000 products, < 20 sources) $1,200/mo
+
+* CUSTOM (pdf/csv generation of wholesaler/competitor list) is live (17c/product up to 300 products, 14c up to 1000, 12c up to 10,0000). Must have own view.
 
 
 
@@ -30,14 +47,12 @@ MVP
 
 
 
-Ruby on Rails
--------------
+Custom to this application Stack
+-------------------------------------
 
-This application requires:
-
-- Ruby 2.2.1
-- Rails 4.2.5
-
+Tool | Type | Info(opt)
+--- | --- | ---
+[Mailchimp](https://bitbucket.org/mailchimp/mailchimp-api-ruby)| Send emails on mailchimp platform | will use sendgrid for transactional, mailchimp for campaign
 
 Getting Started, Application Stack
 ----------------------------------
@@ -72,6 +87,14 @@ Tool | Type | Info(opt)
 [Font-awesome](https://github.com/bokmann/font-awesome-rails) | CSS stylesheet UI magic | worth having even if just for EASY access to that beautiful glyphicon base
 [Pronto](https://github.com/mmozuras/pronto) | comes with a bunch of runners. allows you to combine a lot of useful gems to inspect the quality of your rails code at once and outputs to a file or command line | NOTE: Currently running with an error.
 [Stripe](https://stripe.com/docs/checkout/guides/rails) | Payment acceptance | that's how we get dat sweet cashola for a valuable product.
+
+Ruby on Rails
+-------------
+
+This application requires:
+
+- Ruby 2.2.1
+- Rails 4.2.5
 
 Misc
 --------------
