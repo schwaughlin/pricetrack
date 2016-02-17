@@ -31,6 +31,8 @@ MVP
 
 *[Consider payola integration](https://www.masteringmodernpayments.com/)
 
+*Similarly may need to add recurring billing.
+
 1.0
 =====================
 
@@ -39,6 +41,8 @@ MVP
 * ENTERPRISE is live ( < 100,000 products, < 20 sources) $1,200/mo
 
 * CUSTOM (pdf/csv generation of wholesaler/competitor list) is live (17c/product up to 300 products, 14c up to 1000, 12c up to 10,0000). Must have own view.
+
+*By this point need 100% passing tests and coveration, continuous integration (travis-ci) interfacing with github, and a standard production/version/staging branch system, with feature branches off to the side of staging. No tests should be missing and it should fail pull request if it fails the test.
 
 
 
