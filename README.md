@@ -1,7 +1,34 @@
-Basicframework
+PRICETRACKER
 ================
 
-This is a core shell with which we can clone to kick off other projects with minimal setup. The main changes will be API keys, db names, hooking up to heroku.
+
+
+This is an application built off of the Schwaughlin Company Shell framework.
+
+
+PROTOTYPE
+=================
+
+*[Use sb-2-admin theme](http://startbootstrap.com/template-overviews/sb-admin-2/), I have a lot of experience with it and it's handy. Can upgrade to pure custom later. Or not. It allows the analytics and data management in a slick way for us.
+[follow directions on stackoverflow here](http://stackoverflow.com/questions/30387593/how-to-add-sb-admin-v2-in-ruby-on-rails-app)
+
+*Hook up to Scott's competitor coin site for him to check out.
+
+
+MVP
+===================
+*Render different layouts based on user's plan.
+
+* DEMO is live (our work built on top of an amazon integration, they can or can't add products?)
+
+* BASIC is live. (0-1000 products, 1-3 sources).
+
+
+
+
+
+
+
 
 Ruby on Rails
 -------------
