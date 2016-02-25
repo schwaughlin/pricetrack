@@ -11,33 +11,65 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160209215723) do
+ActiveRecord::Schema.define(version: 20160225031805) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "accounts", force: :cascade do |t|
+    t.boolean  "suspended"
+    t.text     "suspended_reason"
+    t.text     "order_history"
+    t.text     "discount_type"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
   create_table "categories", force: :cascade do |t|
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.text     "category_key"
     t.text     "name"
-    t.integer  "priority"
     t.text     "description"
-    t.text     "parent_key"
+    t.boolean  "is_active"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.text     "name"
+    t.text     "email"
+    t.text     "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "plans", force: :cascade do |t|
+    t.float    "price"
+    t.text     "name"
+    t.text     "description"
+    t.boolean  "active"
+    t.text     "discount_options"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "products", force: :cascade do |t|
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.float    "price"
+    t.text     "price_history"
+    t.text     "web_link"
     t.text     "name"
     t.text     "description"
-    t.float    "price"
-    t.text     "category_code"
-    t.text     "category_name"
-    t.float    "wholesale_price"
-    t.text     "manufacturer"
-    t.text     "product_id"
-    t.integer  "category_id"
+    t.boolean  "has_error"
+    t.text     "error"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "sources", force: :cascade do |t|
+    t.text     "name"
+    t.text     "website"
+    t.boolean  "flawed"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text     "type"
   end
 
   create_table "users", force: :cascade do |t|
