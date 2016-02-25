@@ -1,5 +1,5 @@
 class AddTypeToSource < ActiveRecord::Migration
   def change
-    add column :source, :type, :text
+    add_column :sources, :type, :text
   end
 end

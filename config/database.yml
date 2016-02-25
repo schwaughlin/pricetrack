@@ -16,7 +16,7 @@ development:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: basicframework_development
+  database: basicframework_development_price
   pool:     5
   username: basicframework
   password:
@@ -44,7 +44,7 @@ test:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: basicframework_test
+  database: basicframework_test_price
   pool:     5
   username: basicframework
   password:
@@ -54,7 +54,7 @@ production:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: basicframework_production
+  database: basicframework_production_price
   pool:     5
   username: basicframework
   password:
